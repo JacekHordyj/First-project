@@ -1,0 +1,25 @@
+{% extends 'gallery/index.html' %}
+{% block content %}
+
+<style>
+
+  body {
+      display: flex;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #efdced;
+    }
+</style>
+
+<div class='container h-100' style = 'padding-top: 100px'>
+    <div class="d-flex justify-content-center h-100">
+    <h1>
+        You've been logged out!
+      <p><a href="{% url 'login'%}">Click here to Login!</a></p>  
+    </h1>
+
+    </div>
+</div>
+{% endblock content %}
+
