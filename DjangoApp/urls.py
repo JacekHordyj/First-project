@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('other/',include('other.urls')),
     path('gallery/',include('gallery.urls')),
+    path('todo_list/',include('todo_list.urls')),
     #path('accounts/',include('django.contrib.auth.urls')),
     path('',RedirectView.as_view(url='gallery/home'))
 ]
