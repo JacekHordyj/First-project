@@ -1,5 +1,8 @@
-{% comment %} {% extends 'todo_list\taskindex.html' %}
-{%block content_styling%} {% endcomment %}
+{% extends 'gallery/index.html' %}
+
+{% block content %}
+{% include 'todo_list/taskindex.html' %}
+<div class = "container">
 
 <div class = "header-bar"> 
     <div>
@@ -42,5 +45,5 @@
     <h3>No items in list</h3>
     {% endfor %}
 </div>
-
-{% comment %} {%endblock content_styling%} {% endcomment %}
+</div>
+ {%endblock content%} 
