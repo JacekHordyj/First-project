@@ -1,5 +1,8 @@
-{% extends 'todo_list\taskindex.html' %}\
-{%block content_styling%}
+{% extends 'gallery/index.html' %}
+
+{% block content %}
+{% include 'todo_list/taskindex.html' %}
+<div class = "container">
 
 <div class = "header-bar">
     <a href="{%url 'tasks'%}">&#8592;Go back</a>
@@ -13,5 +16,5 @@
         <input class = "button" type="submit" value = "Delete">
     </form>
 </div>
-
-{%endblock content_styling%}
+</div>
+{%endblock content%}
