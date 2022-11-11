@@ -50,3 +50,6 @@ class TaskDelete(DeleteView):
     model = Task
     context_object_name = 'task'
     success_url = reverse_lazy('tasks')
+
+def test_view(request):
+    return render(request,'todo_list/test.html')
